@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ponto</title>
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/registro-de-ponto.css">
+</head>
+<body>
+    <!-- BARRA -->
+    <nav class="barra">
+        <button class="menu-btn" id="btn-menu">☰ Menu</button>
+        <img src="../images/Logo Fundo Preto.png" alt="Logo" class="logo">
+        <button class="avatar-btn" id="btn-avatar">Administrador</button>
+    </nav>
+    <!-- MENU LATERAL -->
+    <div class="menu-lateral escondido" id="menu-lateral">
+        <a href="../pages/registro-de-ponto.html">Registrar Ponto</a>
+        <a href="../pages/horas-mensais.html">Horas Mensais</a>
+        <a href="../pages/saldos.html">Saldos</a>
+        <a href="../pages/mural.html">Mural</a><hr>
+        <a href="../pages/rh-usuarios.html" class="link-rh">RH - Usuários</a>
+        <a href="../pages/rh-registros.html" class="link-rh">RH - Registros</a>
+        <a href="../pages/rh-avisos.html" class="link-rh">RH - Avisos</a>
+    </div>
+    <!-- MENU PERFIL -->
+    <div class="menu-perfil escondido" id="menu-perfil">
+        <a href="../pages/meu-perfil.html">Meu Perfil</a>
+        <a href="#" id="btn-sair">Sair</a>
+    </div>
+     <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo">
+        <h1>Registro de Ponto</h1>
+        <p class="subtitulo">Registro de ponto diário</p>
+        <div class="colunas">
+            <!-- COLUNA ESQUERDA — REGISTRAR PONTO -->
+            <div class="card">
+                <p class="card-titulo">● Registrar ponto • <span id="data-hoje">—</span></p>
+                <!-- MENSAGEM DE ALERTA -->
+                <p id="mensagem-alerta" class="alerta escondido"></p>
+                <!-- BOTÕES DE PONTO -->
+                <div class="grid-ponto">
+                    <button class="btn-ponto" id="btn-entrada">
+                        <span class="nome">Entrada</span>
+                        <span class="horario" id="horario-entrada">—</span>
+                    </button>
+            
+                    <button class="btn-ponto" id="btn-ini-almoco">
+                        <span class="nome">Início Almoço</span>
+                        <span class="horario" id="horario-ini-almoco">—</span>
+                    </button>
+        
+                    <button class="btn-ponto" id="btn-fim-almoco">
+                        <span class="nome">Fim Almoço</span>
+                        <span class="horario" id="horario-fim-almoco">—</span>
+                    </button>
+            
+                    <button class="btn-ponto" id="btn-saida">
+                        <span class="nome">Saída</span>
+                        <span class="horario" id="horario-saida">—</span>
+                    </button>
+                </div>
+            </div>
+            <!-- COLUNA DIREITA — HISTÓRICO -->
+            <div class="card">
+                <p class="card-titulo">● Histórico de registros - <span id="mes-ano">—</span></p>
+                <div id="historico-lista">
+                    <div class="vazio">
+                        <p>Nenhum registro neste mês</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL — ALMOÇO NÃO REGISTRADO -->
+        <div class="modal-fundo escondido" id="modal-fundo">
+            <div class="modal">
+                <p class="modal-titulo">Almoço não registrado</p>
+                <p class="modal-texto">O almoço não foi registrado. Deseja informar o horário manualmente antes de registrar a saída?</p>
+                <div id="campos-almoco-manual">
+                    <div class="campo">
+                        <label for="manual-ini-almoco">Início do Almoço</label>
+                        <input type="time" id="manual-ini-almoco">
+                    </div>
+                    <div class="campo">
+                        <label for="manual-fim-almoco">Fim do Almoço</label>
+                        <input type="time" id="manual-fim-almoco">
+                    </div>
+                    <p id="erro-almoco-manual" class="alerta escondido"></p>
+                </div>
+                <div class="modal-botoes">
+                    <button class="botao" id="btn-sair-sem-almoco">Sair sem almoço</button>
+                    <button class="botao" id="btn-confirmar-almoco">Registrar almoço e sair</button>
+                </div>
+            </div>
+        </div>
+    </main>
+  <script src="../js/geral.js"></script>
+  <script src="../js/registro-de-ponto.js"></script>
+</body>
+</html>

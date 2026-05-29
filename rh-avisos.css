@@ -1,0 +1,259 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+  margin-top: 56px;
+  padding: 40px 32px;
+}
+.conteudo h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.subtitulo{
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 24px;
+}
+
+/* CARDS - CRIAR NOVO AVISO*/
+.card{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.card-titulo{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* CAMPOS */
+.grade-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.campo{
+  margin-bottom: 16px;
+}
+label{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 6px;
+}
+input, select, textarea{
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #111111;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+textarea{
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* DESTINATÁRIOS - TAGS*/
+.tags-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  min-height: 36px;
+}
+.tag{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: #ffffff;
+  border: 1px solid #111111;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #111111;
+}
+.tag-remover{
+  cursor: pointer;
+  color: #111111;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1;
+}
+
+/* ALERTA */
+.alerta{
+  background-color: #fff3e0;
+  color: #7c5a00;
+  border: 1px solid #ffe082;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+/* BOTÃO PUBLICAR */
+.botao{
+  padding: 10px 20px;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botao:hover{
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* AVISO PUBLICADO */
+.aviso-publicado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #111111;
+  padding: 16px;
+  gap: 20px;
+}
+.aviso-conteudo{
+  flex: 1;
+}
+.aviso-titulo{
+  font-size: 15px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 4px;
+}
+.aviso-descricao{
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.aviso-rodape{
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-top: 8px;
+}
+.aviso-acoes{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.botao-acao{
+  padding: 6px 12px;
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.botao-acao:hover{
+  background-color: #ffffff;
+  color: #111111;
+}
+.botao-excluir{
+  padding: 6px 12px;
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid #f5c6c6;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.botao-excluir:hover{
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* ESTADO VAZIO */
+.vazio{
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+/* MODAL - VER VISUALIZAÇÕES*/
+.modal-fundo{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-titulo{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.modal-subtitulo{
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+.divisor{
+  border: none;
+  border-top: 1px solid #111111;
+  margin: 16px 0;
+}
+.label-visualizacoes{
+  font-size: 12px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+/* LINHA DE VISUALIZAÇÃO */
+.linha-visualizacao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+.linha-visualizacao:last-child{
+  border-bottom: none;
+}
+.visto-sim{
+  color: green;
+  font-size: 12px;
+}
+.visto-nao{
+  color: red;
+  font-size: 12px;
+}
+.modal-botoes{
+  margin-top: 20px;
+}
+.modal-botoes .botao{
+  width: 100%;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}

@@ -1,0 +1,136 @@
+/* ── CORPO DA PÁGINA ── */
+body{
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+ 
+/* ── CAIXA PRINCIPAL ── */
+.principal{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+}
+ 
+/* ── LOGO E TÍTULO ── */
+.logo{
+  text-align: center;
+  margin-bottom: 32px;
+}
+.logo img{
+  height: 60px;
+}
+.logo p{
+  color: #888888;
+  font-size: 14px;
+  margin-top: 8px;
+}
+ 
+/* ── EMAIL E SENHA ── */
+.formulário{
+  margin-bottom: 20px;
+}
+label{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 6px;
+}
+input{
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #222222;
+  box-sizing: border-box;
+}
+ 
+/* ── ENTRAR ── */
+.entrar{
+  width: 100%;
+  padding: 14px;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.entrar:hover{
+  background-color: #ffffff;
+  color: #111111;
+}
+ 
+/* ── ESQUECI SENHA ── */
+.esqueci-senha{
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #111111;
+  text-decoration: underline;
+}
+.esqueci-senha:hover{
+  color: red;
+}
+
+/* MODAL — RECUPERAR SENHA */
+.modal-fundo{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+}
+.modal-titulo{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.campo{
+  margin-bottom: 18px;
+}
+.alerta{
+  background-color: #fff3e0;
+  color: #7c5a00;
+  border: 1px solid #ffe082;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.divisor{
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 20px 0;
+}
+.modal-botoes{
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.modal-botoes .entrar{
+  flex: 1;
+}
+.escondido{
+  display: none;
+}

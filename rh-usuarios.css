@@ -1,0 +1,187 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+    margin-top: 56px;
+    padding: 40px 32px;
+}
+.conteudo h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.subtitulo{
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+ 
+/* CARDS - CADASTRAR NOVO USUÁRIO*/
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.card-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+ 
+/* GRADE - CAMPOS */
+.grade-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.campo-tipo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 612px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 6px;
+}
+input, select{
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #111111;
+    background-color: #ffffff;
+}
+.botao{
+    padding: 10px 20px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: #ffffff;
+    color: #111111;
+}
+ 
+/* ALERTA */
+.alerta{
+    background-color: #fff3e0;
+    color: #7c5a00;
+    border: 1px solid #ffe082;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+ 
+/* TABELA */
+.tabela-scroll{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th{
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 14px;
+    text-align: center;
+}
+td{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 12px 14px;
+    border-bottom: 5px solid #111111;
+}
+ 
+/* BADGE TIPO */
+.badge-rh{
+    display: inline-block;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+.badge-colaborador{
+    display: inline-block;
+    background-color: #ffffff;
+    color: #111111;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+}
+ 
+/* BOTÕES DE AÇÃO NA TABELA */
+.botao-editar, .botao-inativar, .botao-ativar{
+    padding: 5px 12px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.botao-editar:hover, .botao-inativar:hover, .botao-ativar:hover{
+    background-color: #ffffff;
+    color: #111111;
+}
+ 
+/* MODAL - EDITAR USUÁRIO*/
+.modal-fundo{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.modal{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 32px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+.modal-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.modal-botoes{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.modal-botoes .botao{
+    flex: 1;
+}
+ 
+/* ESTADO VAZIO */
+.vazio{
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 14px;
+    padding: 24px 0;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}

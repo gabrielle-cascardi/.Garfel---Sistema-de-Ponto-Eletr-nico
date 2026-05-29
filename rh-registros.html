@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de Ponto</title>
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/rh-registros.css">
+</head>
+<body>
+    <!-- BARRA -->
+    <nav class="barra">
+        <button class="menu-btn" id="btn-menu">☰ Menu</button>
+        <img src="../images/Logo Fundo Preto.png" alt="Logo" class="logo">
+        <button class="avatar-btn" id="btn-avatar">Nome</button>
+    </nav>
+    <!-- MENU LATERAL -->
+    <div class="menu-lateral escondido" id="menu-lateral">
+        <a href="../pages/registro-de-ponto.html">Registrar Ponto</a>
+        <a href="../pages/horas-mensais.html">Horas Mensais</a>
+        <a href="../pages/saldos.html">Saldos</a>
+        <a href="../pages/mural.html">Mural</a><hr>
+        <a href="../pages/rh-usuarios.html" class="link-rh">RH - Usuários</a>
+        <a href="../pages/rh-registros.html" class="link-rh">RH - Registros</a>
+        <a href="../pages/rh-avisos.html" class="link-rh">RH - Avisos</a>
+    </div>
+    <!-- MENU PERFIL -->
+    <div class="menu-perfil escondido" id="menu-perfil">
+        <a href="../pages/meu-perfil.html">Meu Perfil</a>
+        <a href="#" id="btn-sair">Sair</a>
+    </div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo">
+        <h1>Registros de Ponto</h1>
+        <p class="subtitulo">Visualização e edição de registros de ponto</p>
+        <!-- REGISTROS INCOMPLETOS -->
+        <div class="card">
+            <p class="card-titulo">● Registros incompletos</p>
+            <div id="lista-incompletos">
+                <div class="vazio">Nenhum registro incompleto</div>
+            </div>
+        </div>
+        <!-- TODOS OS REGISTROS -->
+        <div class="card">
+            <p class="card-titulo">● Todos os registros</p>
+            <!-- FILTROS -->
+            <div class="filtros">
+                <select id="filtro-usuario">
+                    <option value="">Todos os usuários</option>
+                </select>
+                <input type="month" id="filtro-mes">
+            </div>
+            <!-- TABELA -->
+            <div class="tabela-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>USUÁRIO</th>
+                            <th>DATA</th>
+                            <th>ENTRADA</th>
+                            <th>INÍCIO ALMOÇO</th>
+                            <th>FIM ALMOÇO</th>
+                            <th>SAÍDA</th>
+                            <th>STATUS</th>
+                            <th>AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-registros">
+                        <tr>
+                            <td colspan="8">
+                                <div class="vazio">Nenhum registro encontrado</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- MODAL — EDITAR REGISTRO -->
+    <div class="modal-fundo escondido" id="modal-editar">
+        <div class="modal">
+            <p class="modal-titulo">Editar Registro de Ponto</p>
+            <input type="hidden" id="edit-id">
+            <div class="campo">
+                <label for="edit-entrada">ENTRADA</label>
+                <input type="time" id="edit-entrada">
+            </div>
+            <div class="campo">
+                <label for="edit-ini-almoco">INÍCIO DO ALMOÇO</label>
+                <input type="time" id="edit-ini-almoco">
+            </div>
+            <div class="campo">
+                <label for="edit-fim-almoco">FIM DO ALMOÇO</label>
+                <input type="time" id="edit-fim-almoco">
+            </div>
+            <div class="campo">
+                <label for="edit-saida">SAÍDA</label>
+                <input type="time" id="edit-saida">
+            </div>
+            <div class="modal-botoes">
+                <button class="botao" id="btn-cancelar-edicao">Cancelar</button>
+                <button class="botao" id="btn-salvar-edicao">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/geral.js"></script>
+    <script src="../js/rh-registros.js"></script>
+</body>
+</html>

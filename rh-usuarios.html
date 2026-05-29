@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/rh-usuarios.css">
+</head>
+<body>
+    <!-- BARRA -->
+    <nav class="barra">
+        <button class="menu-btn" id="btn-menu">☰ Menu</button>
+        <img src="../images/Logo Fundo Preto.png" alt="Logo" class="logo">
+        <button class="avatar-btn" id="btn-avatar">Nome</button>
+    </nav>
+    <!-- MENU LATERAL -->
+    <div class="menu-lateral escondido" id="menu-lateral">
+        <a href="../pages/registro-de-ponto.html">Registrar Ponto</a>
+        <a href="../pages/horas-mensais.html">Horas Mensais</a>
+        <a href="../pages/saldos.html">Saldos</a>
+        <a href="../pages/mural.html">Mural</a><hr>
+        <a href="../pages/rh-usuarios.html" class="link-rh">RH - Usuários</a>
+        <a href="../pages/rh-registros.html" class="link-rh">RH - Registros</a>
+        <a href="../pages/rh-avisos.html" class="link-rh">RH - Avisos</a>
+    </div>
+    <!-- MENU PERFIL -->
+    <div class="menu-perfil escondido" id="menu-perfil">
+        <a href="../pages/meu-perfil.html">Meu Perfil</a>
+        <a href="#" id="btn-sair">Sair</a>
+    </div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo">
+        <h1>Cadastro de Usuários</h1>
+        <p class="subtitulo">Visualização e edição de cadastros de usuários</p>
+        <!-- CADASTRAR NOVO USUÁRIO -->
+        <div class="card">
+            <p class="card-titulo">● Cadastrar novo usuário</p>
+            <div class="grade-2">
+                <div class="campo">
+                    <label for="cad-nome">NOME COMPLETO</label>
+                    <input type="text" id="cad-nome" placeholder="Nome do funcionário">
+                </div>
+                <div class="campo">
+                    <label for="cad-nasc">DATA DE NASCIMENTO</label>
+                    <input type="date" id="cad-nasc">
+                </div>
+                <div class="campo">
+                    <label for="cad-cargo">CARGO</label>
+                    <input type="text" id="cad-cargo" placeholder="Ex: Analista">
+                </div>
+                <div class="campo">
+                    <label for="cad-carga">CARGA HORÁRIA MENSAL (H)</label>
+                    <input type="number" id="cad-carga" placeholder="Ex: 160">
+                </div>
+                <div class="campo">
+                    <label for="cad-email">EMAIL</label>
+                    <input type="email" id="cad-email" placeholder="email@empresa.com">
+                </div>
+                <div class="campo">
+                    <label for="cad-senha">SENHA</label>
+                    <input type="password" id="cad-senha" placeholder="Senha inicial">
+                </div>
+            </div>
+            <div class="campo campo-tipo">
+                <label for="cad-tipo">TIPO DE USUÁRIO</label>
+                <select id="cad-tipo">
+                    <option value="colaborador">Colaborador</option>
+                    <option value="rh">RH</option>
+                </select>
+            </div>
+            <p id="cad-mensagem" class="alerta escondido"></p>
+            <button class="botao" id="btn-cadastrar">Cadastrar usuário</button>
+        </div>
+        <!-- USUÁRIOS ATIVOS -->
+        <div class="card">
+            <p class="card-titulo">● Usuários ativos</p>
+            <div class="tabela-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Cargo</th>
+                            <th>Carga (h)</th>
+                            <th>Tipo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-usuarios-ativos"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- USUÁRIOS INATIVOS -->
+        <div class="card">
+            <p class="card-titulo">● Usuários inativos</p>
+            <div class="tabela-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Cargo</th>
+                            <th>Tipo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-usuarios-inativos"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- MODAL — EDITAR USUÁRIO -->
+    <div class="modal-fundo escondido" id="modal-editar">
+        <div class="modal">
+            <p class="modal-titulo">Editar usuário</p>
+            <input type="hidden" id="edit-id">
+            <div class="campo">
+                <label for="edit-nome">Nome Completo</label>
+                <input type="text" id="edit-nome">
+            </div>
+            <div class="campo">
+                <label for="edit-nasc">Data de Nascimento</label>
+                <input type="date" id="edit-nasc">
+            </div>
+            <div class="campo">
+                <label for="edit-cargo">Cargo</label>
+                <input type="text" id="edit-cargo">
+            </div>
+            <div class="campo">
+                <label for="edit-carga">Carga Horária Mensal (h)</label>
+                <input type="number" id="edit-carga">
+            </div>
+            <div class="campo">
+                <label for="edit-email">Email</label>
+                <input type="email" id="edit-email">
+            </div>
+            <div class="campo">
+                <label for="edit-senha">Senha</label>
+                <input type="password" id="edit-senha">
+            </div>
+            <div class="campo">
+                <label for="edit-tipo">Tipo de Usuário</label>
+                <select id="edit-tipo">
+                    <option value="colaborador">Colaborador</option>
+                    <option value="rh">RH</option>
+                </select>
+            </div>
+            <div class="modal-botoes">
+                <button class="botao" id="btn-cancelar-edicao">Cancelar</button>
+                <button class="botao" id="btn-salvar-edicao">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/geral.js"></script>
+    <script src="../js/rh-usuarios.js"></script>
+</body>
+</html>

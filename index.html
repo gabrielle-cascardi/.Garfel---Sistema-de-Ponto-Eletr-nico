@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- CAIXA PRINCIPAL -->
+    <div class="principal">
+        <!-- LOGO E TÍTULO -->
+        <div class="logo">
+            <img src="images/Logo Fundo Branco.png" alt="Logo .Garfel">
+            <p>Sistema de Ponto Eletrônico</p>
+        </div>
+        <!-- EMAIL E SENHA -->
+        <div>
+            <div class="formulário">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+            </div>
+            
+            <div class="formulário">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="••••••••">
+            </div>
+            <!-- ENTRAR -->
+            <button class="entrar">Entrar</button>
+            <!-- ESQUECI SENHA -->
+            <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+        </div>
+        <!-- MODAL — RECUPERAR SENHA -->
+        <div class="modal-fundo escondido" id="modal-recuperar">
+            <div class="modal">
+                <p class="modal-titulo">Recuperar Senha</p>
+                <div class="campo">
+                    <label for="rec-email">Email cadastrado</label>
+                    <input type="email" id="rec-email" placeholder="seu@email.com">
+                </div>
+                <div class="campo">
+                    <label for="rec-nasc">Data de Nascimento</label>
+                    <input type="date" id="rec-nasc">
+                </div>
+                <div class="campo">
+                    <label for="rec-cargo">Cargo</label>
+                    <input type="text" id="rec-cargo" placeholder="Seu cargo">
+                </div>
+                <p id="rec-erro" class="alerta escondido">Dados incorretos ou não encontrados.</p>
+                <div id="rec-nova-senha" class="escondido">
+                    <hr class="divisor">
+                    <div class="campo">
+                        <label for="rec-nova">Nova Senha</label>
+                        <input type="password" id="rec-nova" placeholder="Nova senha">
+                    </div>
+                    <div class="campo">
+                        <label for="rec-confirma">Confirmar Senha</label>
+                        <input type="password" id="rec-confirma" placeholder="Confirme a senha">
+                    </div>
+                </div>
+                <div class="modal-botoes">
+                    <button class="entrar" id="rec-btn-voltar">Voltar</button>
+                    <button class="entrar" id="rec-btn-verificar">Verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="js/geral.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

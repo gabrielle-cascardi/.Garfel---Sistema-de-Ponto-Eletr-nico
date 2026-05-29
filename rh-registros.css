@@ -1,0 +1,183 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+    margin-top: 56px;
+    padding: 40px 32px;
+}
+.conteudo h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.subtitulo{
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+ 
+/* CARDS - REGISTROS INCOMPLETOS E TODOS OS REGISTROS*/
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.card-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+ 
+/* FILTROS */
+.filtros{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.filtros select, .filtros input{
+    padding: 8px 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #111111;
+    background-color: #ffffff;
+}
+ 
+/* REGISTROS INCOMPLETO */
+.linha-incompleto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 5px solid #f0f0f0;
+}
+.incompleto-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #111111;
+}
+ 
+/* BADGE INCOMPLETO */
+.badge-incompleto{
+    display: inline-block;
+    background-color: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ffe082;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+ 
+/* TABELA */
+.tabela-scroll{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th{
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 14px;
+    text-align: center;
+}
+td{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 12px 14px;
+    border-bottom: 5px solid #111111;
+}
+
+/* ESTADO VAZIO */
+.vazio{
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 15px;
+    padding: 24px 0;
+}
+ 
+/* BOTÕES DE AÇÃO NA TABELA */
+.botao-acao{
+    padding: 5px 12px;
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.botao-acao:hover{
+    background-color: #ffffff;
+    color: #111111;
+}
+ 
+/* MODAL - EDITAR REGISTRO*/
+.modal-fundo{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 32px;
+    width: 100%;
+    max-width: 460px;
+}
+.modal-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.campo{
+    margin-bottom: 16px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 6px;
+}
+input[type="time"]{
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.modal-botoes{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.botao{
+    flex: 1;
+    padding: 12px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}

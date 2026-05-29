@@ -1,0 +1,73 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+    margin-top: 56px;
+    padding: 40px 32px;
+}
+.conteudo h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+ 
+/* SUBTÍTULO */
+.subtitulo{
+    font-size: 15px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+ 
+/* CARD - TABELA DE SALDOS*/
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+}
+.card-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.tabela-scroll{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+th{
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 14px;
+    text-align: center;
+}
+td{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 12px 14px;
+    border-bottom: 5px solid #111111;
+}
+
+/* ESTADO VAZIO */
+.vazio{
+    text-align: center;
+    color: #666666;
+    font-size: 15px;
+    padding: 24px 0;
+}
+
+/* SALDO POSITIVO E NEGATIVO */
+.saldo-positivo{
+    color: green;
+    font-weight: bold;
+}
+.saldo-negativo{
+    color: red;
+    font-weight: bold;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Avisos</title>
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/mural.css">
+</head>
+<body>
+    <!-- BARRA -->
+    <nav class="barra">
+        <button class="menu-btn" id="btn-menu">☰ Menu</button>
+        <img src="../images/Logo Fundo Preto.png" alt="Logo" class="logo">
+        <button class="avatar-btn" id="btn-avatar">Nome</button>
+    </nav>
+    <!-- MENU LATERAL -->
+    <div class="menu-lateral escondido" id="menu-lateral">
+        <a href="../pages/registro-de-ponto.html">Registrar Ponto</a>
+        <a href="../pages/horas-mensais.html">Horas Mensais</a>
+        <a href="../pages/saldos.html">Saldos</a>
+        <a href="../pages/mural.html">Mural</a><hr>
+        <a href="../pages/rh-usuarios.html" class="link-rh">RH - Usuários</a>
+        <a href="../pages/rh-registros.html" class="link-rh">RH - Registros</a>
+        <a href="../pages/rh-avisos.html" class="link-rh">RH - Avisos</a>
+    </div>
+    <!-- MENU PERFIL -->
+    <div class="menu-perfil escondido" id="menu-perfil">
+        <a href="../pages/meu-perfil.html">Meu Perfil</a>
+        <a href="#" id="btn-sair">Sair</a>
+    </div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo">
+        <h1>Mural de Avisos</h1>
+        <p class="subtitulo">Comunicados gerais e específicos</p>
+        <!-- LISTA DE AVISOS -->
+        <div id="lista-avisos">
+            <div class="vazio">Nenhum aviso disponível</div>
+        </div>
+    </main>
+    <script src="../js/geral.js"></script>
+    <script src="../js/mural.js"></script>
+</body>
+</html>

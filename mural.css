@@ -1,0 +1,83 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+    margin-top: 56px;
+    padding: 40px 32px;
+}
+.conteudo h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.subtitulo{
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+
+/* ESTADO VAZIO */
+.vazio{
+    padding: 40px;
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+/* AVISO - CARD INDIVIDUAL */
+.aviso{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    border-left: 4px solid #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+ 
+/* LADO ESQUERDO DO AVISO */
+.aviso-conteudo{
+    flex: 1;
+}
+.aviso-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 6px;
+}
+.aviso-descricao{
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+.aviso-data{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+ 
+/* BOTÃO MARCAR COMO VISTO */
+.botao-visto{
+    padding: 8px 16px;
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.botao-visto:hover{
+    background-color: #ffffff;
+    color: #111111;
+}
+.visto-em{
+    font-size: 12px;
+    color: #888888;
+    white-space: nowrap;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}

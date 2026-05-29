@@ -1,0 +1,163 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+  margin-top: 56px;
+  padding: 40px 32px;
+}
+.conteudo h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.subtitulo{
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 24px;
+}
+ 
+/* COLUNAS */
+.colunas{
+  display: flex;
+  gap: 20px;
+}
+ 
+/* CARD - REGISTRAR PONTO e HISTÓRICO*/
+.card{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+  flex: 1;
+}
+.card-titulo{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* MENSAGEM DE ALERTA */
+.alerta{
+  background-color: #fff3e0;
+  color: #7c5a00;
+  border: 1px solid #7c5a00;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+/* BOTÕES DE PONTO */
+.grid-ponto{
+  display: grid;
+  gap: 14px;
+}
+.btn-ponto{
+  display: flex;
+  flex-direction: column;
+  padding: 22px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.btn-ponto:hover{
+  border-color: #111111;
+  background-color: #aaaaaa;
+}
+.btn-ponto.registrado{
+  border-color: #111111;
+  background-color: #aaaaaa;
+  color: #222222;
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.nome{
+  font-size: 14px;
+  font-weight: bold;
+  color: #111111;
+}
+.horario{
+  font-size: 12px;
+  color: #111111;
+}
+
+/* HISTÓRICO DE REGISTROS*/
+.linha-historico{
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.linha-historico:last-child{
+  border-bottom: none;
+}
+/* ESTADO VAZIO */
+.vazio{
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+ 
+/* MODAL - ALMOÇO NÃO REGISTRADO*/
+.modal-fundo{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 36px;
+  max-width: 460px;
+}
+.modal-titulo{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.modal-texto{
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.campo{
+  margin-bottom: 16px;
+}
+label{
+  font-size: 12px;
+  font-weight: bold;
+  color: #111111;
+}
+input[type="time"]{
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.modal-botoes{
+  display: flex;
+  gap: 10px;
+}
+.botao{
+  flex: 1;
+  padding: 12px;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botao:hover{
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}

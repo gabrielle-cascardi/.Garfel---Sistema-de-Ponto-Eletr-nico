@@ -1,0 +1,112 @@
+/* CONTEÚDO PRINCIPAL */
+.conteudo{
+    margin-top: 56px;
+    padding: 40px 32px;
+}
+.conteudo h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+ 
+/* SUBTÍTULO */
+.subtitulo{
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+ 
+/* CARDS DE RESUMO */
+.grade-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.card-label{
+    font-size: 14px;
+    color: #111111;
+    font-weight: bold;
+}
+.card h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.card-sub{
+    font-size: 12px;
+    color: #888888;
+}
+ 
+/* PROGRESSO DO MÊS */
+.card-titulo{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.progresso-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 8px;
+}
+.barra-progresso{
+    height: 6px;
+    background-color: #aaaaaa;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.barra-fill{
+    height: 100%;
+    background-color: #111111;
+    border-radius: 3px;
+}
+ 
+/* REGISTROS DO MÊS */
+.tabela-scroll{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+th{
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 14px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+td{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 12px 14px;
+    border-bottom: 5px solid #111111;
+}
+
+/* ESTADO VAZIO */
+.vazio{
+    text-align: center;
+    color: #666666;
+    font-size: 15px;
+    padding: 24px 0;
+}
+
+/* STATUS INCOMPLETO */
+.status-incompleto{
+    color: red;
+    font-weight: bold;
+}
+
+/* ── UTILITÁRIO PARA ESCONDER ELEMENTO ── */
+.escondido{
+  display: none;
+}
